@@ -20,7 +20,7 @@ html {
 
 /* Navigation Bar */
 header {
-    background: linear-gradient(45deg, #ff8c00, #d40000);
+    background: linear-gradient(45deg, #8B4513, #d2691e);
     padding: 15px 0;
     color: white;
 }
@@ -53,13 +53,13 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background-color: #444;
+    background-color: #5c3d1f;
     border-radius: 30px;
 }
 
 /* Hero Section */
 .hero {
-    background: url('https://via.placeholder.com/1200x600/333/fff?text=Hero+Coffee+Image') no-repeat center center/cover;
+    background: url('https://via.placeholder.com/1200x600/8B4513/fff?text=Hero+Coffee+Image') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 120px 20px;
@@ -80,7 +80,7 @@ header nav ul li a:hover {
 }
 
 .btn {
-    background-color: #ff8c00;
+    background-color: #d2691e;
     color: white;
     padding: 15px 30px;
     border: none;
@@ -92,7 +92,7 @@ header nav ul li a:hover {
 }
 
 .btn:hover {
-    background-color: #e07a00;
+    background-color: #8B4513;
     transform: translateY(-3px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -143,4 +143,23 @@ header nav ul li a:hover {
 }
 
 .price {
-    font-size: 1.
+    font-size: 1.3rem;
+    color: #d2691e;
+    margin-top: 10px;
+}
+
+/* About Section */
+.about-img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
