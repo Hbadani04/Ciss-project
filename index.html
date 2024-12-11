@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Portfolio</title>
+    <title>My Cafe</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,11 +14,13 @@
     <!-- Navigation Bar -->
     <header>
         <nav>
+            <div class="logo">
+                <h1>My Cafe</h1>
+            </div>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -27,66 +29,60 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>I'm a passionate web developer creating beautiful and functional websites.</p>
-            <a href="#about" class="btn">Learn More</a>
+            <h1>Welcome to My Cafe</h1>
+            <p>Your perfect place to relax and enjoy a cup of coffee.</p>
+            <a href="#menu" class="btn">Explore Menu</a>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Menu Section -->
+    <section id="menu" class="section menu">
+        <div class="section-content">
+            <h2>Our Menu</h2>
+            <div class="menu-list">
+                <div class="menu-item">
+                    <h3>Coffee</h3>
+                    <p>Freshly brewed coffee made with the finest beans.</p>
+                    <p class="price">$5.00</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Cappuccino</h3>
+                    <p>Espresso with steamed milk and a creamy foam topping.</p>
+                    <p class="price">$6.00</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Latte</h3>
+                    <p>A rich espresso with steamed milk and a smooth foam.</p>
+                    <p class="price">$5.50</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Pastries</h3>
+                    <p>Freshly baked pastries to accompany your coffee.</p>
+                    <p class="price">$3.00</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Tea</h3>
+                    <p>A variety of hot and iced teas for every taste.</p>
+                    <p class="price">$4.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
     <section id="about" class="section about">
         <div class="section-content">
-            <h2>About Me</h2>
-            <p>Hi! I'm a web developer with a strong background in creating responsive and accessible websites. I specialize in front-end development with a passion for clean code and modern design trends.</p>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="section services">
-        <div class="section-content">
-            <h2>My Services</h2>
-            <div class="service-list">
-                <div class="service-item">
-                    <h3>Web Design</h3>
-                    <p>I design user-friendly and modern websites tailored to your needs.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Front-End Development</h3>
-                    <p>Creating responsive and interactive web interfaces using HTML, CSS, and JavaScript.</p>
-                </div>
-                <div class="service-item">
-                    <h3>SEO Optimization</h3>
-                    <p>I help improve your website's visibility on search engines with on-page SEO techniques.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section projects">
-        <div class="section-content">
-            <h2>Projects</h2>
-            <div class="project-list">
-                <div class="project-item">
-                    <h3>Project 1</h3>
-                    <p>A dynamic website built with HTML, CSS, and JavaScript.</p>
-                </div>
-                <div class="project-item">
-                    <h3>Project 2</h3>
-                    <p>An e-commerce website with a shopping cart functionality.</p>
-                </div>
-                <div class="project-item">
-                    <h3>Project 3</h3>
-                    <p>A responsive blog website using WordPress and custom themes.</p>
-                </div>
-            </div>
+            <h2>About Us</h2>
+            <p>At My Cafe, we believe in bringing people together over great food and exceptional coffee. Our mission is to provide a warm, inviting space where everyone can unwind, chat, and enjoy high-quality, freshly brewed beverages and baked goods.</p>
+            <img src="https://via.placeholder.com/600x400" alt="Cafe Interior">
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section contact">
         <div class="section-content">
-            <h2>Contact Me</h2>
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you. Visit us or get in touch with us below!</p>
             <form action="#">
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -94,7 +90,7 @@
                 <label for="email">Your Email:</label>
                 <input type="email" id="email" name="email" required>
                 
-                <label for="message">Message:</label>
+                <label for="message">Your Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
                 
                 <button type="submit" class="btn">Send Message</button>
@@ -105,7 +101,7 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+            <p>&copy; 2024 My Cafe. All rights reserved.</p>
         </div>
     </footer>
 
