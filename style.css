@@ -101,6 +101,7 @@ header nav ul li a:hover {
 .section {
     padding: 80px 20px;
     text-align: center;
+    background-color: #fff;
 }
 
 .menu-list {
@@ -163,3 +164,54 @@ form {
     flex-direction: column;
     gap: 20px;
     max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #d2691e;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #8B4513;
+}
+
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 2rem;
+    display: none;
+    transition: opacity 0.3s ease;
+}
+
+#back-to-top:hover {
+    background-color: #d2691e;
+}
+
+footer {
+    background-color: #8B4513;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
