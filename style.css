@@ -1,21 +1,22 @@
-/* General styles for the page */
+/* General styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #fff;
     color: #333;
 }
 
 header {
-    background-color: #333;
+    background-color: #000;
     color: white;
     padding: 20px;
 }
 
 header nav ul {
     list-style-type: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
     text-align: center;
 }
 
@@ -31,40 +32,34 @@ header nav ul li a {
 }
 
 /* Hero Section */
-#home {
-    background-image: url('https://cloudfront-us-east-1.images.arcpublishing.com/spectator/ORHEUZHQUNF5JCABA4JMTL2NXI.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+.hero {
+    background-color: #000;
     color: white;
+    padding: 100px 0;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
-#home h1 {
+.hero h1 {
     font-size: 3em;
     margin-bottom: 20px;
 }
 
-#home p {
+.hero p {
     font-size: 1.5em;
     margin-bottom: 20px;
 }
 
-#home .btn {
-    background-color: black;
-    color: white;
+.hero .btn {
+    background-color: #fff;
+    color: #000;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1.1em;
 }
 
-#home .btn:hover {
-    background-color: #444;
+.hero .btn:hover {
+    background-color: #333;
+    color: #fff;
 }
 
 /* Section styles */
@@ -78,11 +73,6 @@ header nav ul li a {
     margin: 0 auto;
 }
 
-/* Menu Section */
-#menu {
-    background-color: #f8f8f8;
-}
-
 .menu-list {
     display: flex;
     flex-wrap: wrap;
@@ -92,11 +82,11 @@ header nav ul li a {
 .menu-item {
     width: 30%;
     margin: 20px;
-    text-align: center;
-    background-color: white;
+    background-color: #fff;
     padding: 20px;
+    text-align: center;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
 }
 
 .menu-item img {
@@ -108,10 +98,10 @@ header nav ul li a {
 
 .menu-item h3 {
     margin-top: 15px;
+    font-size: 1.5em;
 }
 
 .menu-item p {
-    font-size: 1em;
     margin-top: 10px;
 }
 
@@ -122,32 +112,24 @@ header nav ul li a {
 
 /* About Section */
 #about {
-    background-image: url('https://via.placeholder.com/600x400/8B4513/fff?text=Cafe+Interior');
-    background-size: cover;
-    background-position: center;
-    color: white;
-}
-
-#about .about-img {
-    width: 100%;
-    max-width: 600px;
-    margin: 20px 0;
-    border-radius: 8px;
-}
-
-/* Contact Section */
-#contact {
     background-color: #f8f8f8;
 }
 
+.about-img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+/* Contact Section */
 #contact form {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
 
-#contact form input,
+#contact form input, 
 #contact form textarea {
     padding: 10px;
     margin: 10px 0;
@@ -156,7 +138,7 @@ header nav ul li a {
 }
 
 #contact form button {
-    background-color: black;
+    background-color: #000;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -170,14 +152,10 @@ header nav ul li a {
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #000;
     color: white;
     text-align: center;
     padding: 20px;
-}
-
-footer p {
-    margin: 0;
 }
 
 /* Back to Top Button */
@@ -185,7 +163,7 @@ footer p {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #333;
+    background-color: #000;
     color: white;
     border: none;
     padding: 15px;
@@ -196,4 +174,4 @@ footer p {
 
 .back-to-top-btn:hover {
     background-color: #444;
-} 
+}
