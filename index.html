@@ -3,132 +3,283 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafe</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Fancy Cafe</title>
+    <link rel="stylesheet" href="style.css">
     <style>
+        /* General styles for the page */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f8;
         }
+
+        /* Navigation Bar */
         header {
             background-color: #333;
             color: white;
-            text-align: center;
-            padding: 1em;
-        }
-        .content {
-            display: flex;
-            justify-content: space-around;
             padding: 20px;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        /* Hero Section */
+        #home {
+            background-image: url('https://cloudfront-us-east-1.images.arcpublishing.com/spectator/ORHEUZHQUNF5JCABA4JMTL2NXI.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #home h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        #home p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        /* Section styles */
+        .section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .section-content {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Menu Section */
+        #menu {
+            background-color: #f8f8f8;
+        }
+
+        .menu-list {
+            display: flex;
             flex-wrap: wrap;
+            justify-content: space-around;
         }
-        .card {
-            background-color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 250px;
+
+        .menu-item {
+            width: 30%;
             margin: 20px;
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            overflow: hidden;
         }
-        .card img {
+
+        .menu-item img {
             width: 100%;
             height: 200px;
             object-fit: cover;
+            border-radius: 8px;
         }
-        .card h2 {
-            text-align: center;
-            font-size: 1.5em;
-            padding: 10px;
+
+        .price {
+            font-weight: bold;
+            margin-top: 10px;
         }
-        .card p {
-            text-align: center;
-            padding: 10px;
-            color: #555;
+
+        /* About Section */
+        #about {
+            background-image: url('https://via.placeholder.com/600x400/8B4513/fff?text=Cafe+Interior');
+            background-size: cover;
+            background-position: center;
+            color: white;
         }
-        .footer {
+
+        #about .about-img {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #f8f8f8;
+        }
+
+        /* Footer */
+        footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 1em;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
+            padding: 20px;
         }
-        .card a {
-            display: block;
-            text-align: center;
-            padding: 10px;
-            background-color: #444;
+
+        .btn {
+            background-color: black;
             color: white;
+            padding: 10px 20px;
             text-decoration: none;
-            border-radius: 4px;
+            border-radius: 5px;
+            font-size: 1.1em;
         }
-        .card a:hover {
-            background-color: #555;
+
+        .btn:hover {
+            background-color: #444;
+        }
+
+        /* Button styles */
+        .back-to-top-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .back-to-top-btn:hover {
+            background-color: #444;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Cafe Delights</h1>
-    <p>Your favorite spot for coffee, tea, pastries, and more!</p>
-</header>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>My Cafe</h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div class="content">
-    <!-- Coffee Card -->
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1569801256-4c9eebaf2b76" alt="Coffee">
-        <h2>Coffee</h2>
-        <p>Start your day with a warm cup of coffee!</p>
-        <a href="#">Order Now</a>
-    </div>
+    <!-- Hero Section with background image -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Fancy Cafe</h1>
+            <p>Experience the finest coffee and pastries with a touch of elegance.</p>
+            <a href="#menu" class="btn">Explore Our Menu</a>
+        </div>
+    </section>
 
-    <!-- Cappuccino Card -->
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1506775919895-b832d7c8b58f" alt="Cappuccino">
-        <h2>Cappuccino</h2>
-        <p>Perfect blend of rich espresso and steamed milk.</p>
-        <a href="#">Order Now</a>
-    </div>
+    <!-- Menu Section -->
+    <section id="menu" class="section menu">
+        <div class="section-content">
+            <h2>Our Menu</h2>
+            <div class="menu-list">
+                <!-- Coffee -->
+                <div class="menu-item">
+                    <img src="https://www.publicdomainpictures.net/pictures/30000/velka/coffee-cup-1360240887mTY.jpg" alt="Coffee">
+                    <h3>Coffee</h3>
+                    <p>Freshly brewed coffee made with premium beans.</p>
+                    <p class="price">$5.00</p>
+                </div>
 
-    <!-- Latte Card -->
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1507642259-3bc257505301" alt="Latte">
-        <h2>Latte</h2>
-        <p>Smooth and creamy coffee with a velvety texture.</p>
-        <a href="#">Order Now</a>
-    </div>
+                <!-- Cappuccino -->
+                <div class="menu-item">
+                    <img src="https://www.publicdomainpictures.net/pictures/30000/velka/cappuccino-1360240797YhZ.jpg" alt="Cappuccino">
+                    <h3>Cappuccino</h3>
+                    <p>Espresso with steamed milk and a creamy foam topping.</p>
+                    <p class="price">$6.00</p>
+                </div>
 
-    <!-- Pastries Card -->
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1569917251-3e4c8751390f" alt="Pastries">
-        <h2>Pastries</h2>
-        <p>Indulge in delicious and fresh pastries.</p>
-        <a href="#">Order Now</a>
-    </div>
+                <!-- Latte -->
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/350x200/F4A300/fff?text=Latte" alt="Latte">
+                    <h3>Latte</h3>
+                    <p>A rich espresso with steamed milk and smooth foam.</p>
+                    <p class="price">$5.50</p>
+                </div>
 
-    <!-- Tea Card -->
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1568773348-999b56d44c1f" alt="Tea">
-        <h2>Tea</h2>
-        <p>Refreshing and calming, a perfect companion to your day.</p>
-        <a href="#">Order Now</a>
-    </div>
+                <!-- Pastries -->
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/350x200/6B4226/fff?text=Pastries" alt="Pastries">
+                    <h3>Pastries</h3>
+                    <p>Freshly baked pastries, the perfect complement to your coffee.</p>
+                    <p class="price">$3.00</p>
+                </div>
 
-    <!-- Cafe Interior Card -->
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1584710917993-d8f8b771e803" alt="Cafe Interior">
-        <h2>Cafe Interior</h2>
-        <p>Relax and enjoy the cozy ambiance of our cafe.</p>
-        <a href="#">Explore Now</a>
-    </div>
-</div>
+                <!-- Tea -->
+                <div class="menu-item">
+                    <img src="https://via.placeholder.com/350x200/9C9C9C/fff?text=Tea" alt="Tea">
+                    <h3>Tea</h3>
+                    <p>Varieties of hot and iced teas to refresh your senses.</p>
+                    <p class="price">$4.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="footer">
-    <p>&copy; 2024 Cafe Delights. All rights reserved.</p>
-</div>
+    <!-- About Us Section -->
+    <section id="about" class="section about">
+        <div class="section-content">
+            <h2>About Us</h2>
+            <p>At My Fancy Cafe, we offer a unique and luxurious experience. We are passionate about serving freshly brewed coffee and delicious pastries, all in a chic and cozy atmosphere.</p>
+            <img src="https://via.placeholder.com/600x400/8B4513/fff?text=Cafe+Interior" alt="Cafe Interior" class="about-img">
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="section-content">
+            <h2>Contact Us</h2>
+            <p>We’d love to hear from you! Drop us a message, and we'll get back to you shortly.</p>
+            <form action="#">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top-btn">↑</button>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 My Fancy Cafe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
