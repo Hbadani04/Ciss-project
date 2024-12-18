@@ -1,217 +1,199 @@
-/* Reset basic styles */
-* {
+/* General styles for the page */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body and general styling */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
     color: #333;
 }
 
-/* Smooth scroll */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Navigation Bar */
 header {
-    background: linear-gradient(45deg, #8B4513, #d2691e);
-    padding: 15px 0;
+    background-color: #333;
     color: white;
-}
-
-header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px;
 }
 
 header nav ul {
-    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 header nav ul li {
-    list-style: none;
-    margin: 0 20px;
+    display: inline;
+    margin-right: 20px;
 }
 
 header nav ul li a {
     color: white;
-    font-size: 18px;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-header nav ul li a:hover {
-    background-color: #5c3d1f;
-    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.2em;
 }
 
 /* Hero Section */
-.hero {
-    background: url('https://via.placeholder.com/1200x600/8B4513/fff?text=Hero+Coffee+Image') no-repeat center center/cover;
+#home {
+    background-image: url('https://cloudfront-us-east-1.images.arcpublishing.com/spectator/ORHEUZHQUNF5JCABA4JMTL2NXI.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
     color: white;
     text-align: center;
-    padding: 120px 20px;
-    position: relative;
-    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.hero-content h1 {
-    font-size: 4rem;
+#home h1 {
+    font-size: 3em;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-.hero-content p {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+#home p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
-.btn {
-    background-color: #d2691e;
+#home .btn {
+    background-color: black;
     color: white;
-    padding: 15px 30px;
-    border: none;
-    cursor: pointer;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    border-radius: 30px;
-    transition: all 0.3s ease;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
 }
 
-.btn:hover {
-    background-color: #8B4513;
-    transform: translateY(-3px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+#home .btn:hover {
+    background-color: #444;
+}
+
+/* Section styles */
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section-content {
+    width: 80%;
+    margin: 0 auto;
 }
 
 /* Menu Section */
-.section {
-    padding: 80px 20px;
-    text-align: center;
-    background-color: #fff;
+#menu {
+    background-color: #f8f8f8;
 }
 
 .menu-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 30px;
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .menu-item {
-    background-color: #fff;
+    width: 30%;
+    margin: 20px;
+    text-align: center;
+    background-color: white;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.menu-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .menu-item img {
     width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
     height: 200px;
     object-fit: cover;
+    border-radius: 8px;
 }
 
 .menu-item h3 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    color: #333;
+    margin-top: 15px;
 }
 
 .menu-item p {
-    font-size: 1rem;
-    color: #777;
+    font-size: 1em;
+    margin-top: 10px;
 }
 
 .price {
-    font-size: 1.3rem;
-    color: #d2691e;
+    font-weight: bold;
     margin-top: 10px;
 }
 
 /* About Section */
-.about-img {
+#about {
+    background-image: url('https://via.placeholder.com/600x400/8B4513/fff?text=Cafe+Interior');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#about .about-img {
     width: 100%;
     max-width: 600px;
-    margin-top: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    border-radius: 8px;
 }
 
 /* Contact Section */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 600px;
-    margin: 0 auto;
+#contact {
+    background-color: #f8f8f8;
 }
 
-form input, form textarea {
+#contact form {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact form input,
+#contact form textarea {
     padding: 10px;
-    font-size: 1rem;
+    margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-form button {
-    background-color: #d2691e;
+#contact form button {
+    background-color: black;
     color: white;
-    padding: 15px 30px;
+    padding: 10px 20px;
     border: none;
-    font-size: 1.2rem;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    font-size: 1.1em;
 }
 
-form button:hover {
-    background-color: #8B4513;
+#contact form button:hover {
+    background-color: #444;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
 }
 
 /* Back to Top Button */
-#back-to-top {
+.back-to-top-btn {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #8B4513;
+    background-color: #333;
     color: white;
     border: none;
     padding: 15px;
+    font-size: 20px;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 2rem;
-    display: none;
-    transition: opacity 0.3s ease;
 }
 
-#back-to-top:hover {
-    background-color: #d2691e;
-}
-
-footer {
-    background-color: #8B4513;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+.back-to-top-btn:hover {
+    background-color: #444;
 }
